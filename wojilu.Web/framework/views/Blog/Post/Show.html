@@ -1,0 +1,28 @@
+﻿
+#{blog.SaveStatus}
+
+<div class="default_contents"><div class="user_article">
+<h1 class="title_txt"><a id="labTitle" href="#">#{blog.Title}</a></h1>
+<div class="right" style="font-size:14pt;">字号【<a href="javascript:SetFontSize('labBody','18')">大</a> <a href="javascript:SetFontSize('labBody','16')">中</a> <a href="javascript:SetFontSize('labBody','14')">小</a>】</div>
+<div class="blogstory"><div id="labBody">
+#{blog.Body}
+</div>
+<div class="post-tag" id="labTag">关键字<span>&nbsp;</span>
+#{blog.TagList}</div>
+
+<p class="right articalinfo"><span id="labCreateTime">#{blog.Author} #{blog.CreateTime}</span>
+									<label id="labCommentCount">#{blog.Replies}</label>
+									|
+									<label id="labHits">_{view}: #{blog.Hits}</label></p><div style="text-align: left;">
+									
+									</div></div></div>
+<div id="labCommentList" class="commentslist">#{commentSection}</div>
+<script>
+    $(document).ready(function() {
+        wojilu.tool.shareFull();
+        SetFontSize('labBody', '14');
+    });
+function SetFontSize(areaid, size) {
+    document.getElementById(areaid).style.fontSize = size + "px";
+}
+</script>

@@ -1,0 +1,47 @@
+﻿<div count="20" class="post_list">
+    <!-- BEGIN bloglist -->
+    <div class="default_contents">
+        <h6 id="H1" class="pubtime">
+            #{blogpost.CreateDate}
+        </h6>
+        <div class="user_article">
+            <h1 class="title_txt">
+                &nbsp;
+                <a id="A1" href="#{blogpost.Url}">
+                    #{blogpost.Title}
+                </a>
+            </h1>
+            <p id="P1">
+                #{blogpost.Body}
+            </p>
+            <p class="right articalinfo">
+                Post @
+                <span id="Span1">
+                    #{blogpost.CreateDate}
+                </span>
+                |
+                <span>
+                    浏览
+                </span>
+                <span name="17" id="Span2">
+                    (#{blogpost.Hits})
+                </span>
+                |
+                <span>
+                    评论
+                </span>
+                <span id="Span3">
+                    (#{blogpost.ReplyCount})
+                </span>
+                &nbsp;&nbsp;
+                <span style="#{EditUrlStyle}">
+                <a href="#{blogpost.EditUrl}" id="A3">
+                    编辑
+                </a>
+                </span>
+            </p>
+        </div>
+    </div>
+    <!-- END bloglist -->
+</div>
+<div>#{pager}</div>

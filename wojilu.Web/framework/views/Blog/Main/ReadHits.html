@@ -1,0 +1,49 @@
+﻿<div count="20" class="post_list">
+    <!-- BEGIN list -->
+    <div class="post_item">
+        <div class="post_item_body">
+            <h3>
+                <a target="_blank" class="titlelnk" href="#{post.LinkShow}">
+                    #{post.Title}
+                </a>
+            </h3>
+            <p class="post_item_summary">
+                <a target="_blank" href="#{post.userLink}">
+                    <img border="0" align="left" class="pfs" src="#{post.Face}">
+                </a>
+                <label>
+                    #{post.Abstract}
+                </label>
+            </p>
+            <div class="post_item_foot">
+                <a class="lightblue" href="#{post.userLink}">
+                    #{post.Creator}
+                </a>
+                &nbsp;
+                <span>
+                    #{post.Created}
+                </span>
+                <span class="article_comment">
+                    <label class="gray">
+                        评论
+                    </label>
+                    <label>
+                        (#{post.ReplyCount})
+                    </label>
+                </span>
+                <span class="article_view">
+                    <label class="gray">
+                        浏览
+                    </label>
+                    <label hid="54464" name="labHits">
+                        (#{post.Hits})
+                    </label>
+                </span>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <!-- END list -->
+</div>
+<div>#{pager}</div>

@@ -1,0 +1,74 @@
+﻿<div class="header">
+    <p class="h_r_3">
+    </p>
+    <p class="h_r_2">
+    </p>
+    <p class="h_r_1">
+    </p>
+    <div class="header_block">
+        <div class="logo">
+            <h1>
+                <a href="/">
+                    <img alt="Autumn Garden Logo" src="~img/logo_douyh.jpg">
+                </a>
+            </h1>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <p class="h_r_1">
+    </p>
+    <p class="h_r_2">
+    </p>
+    <p class="h_r_3">
+    </p>
+</div>
+<div class="nav_wrapper">
+    <div class="nav_block">
+        <ul>
+            <li>
+                <a title="最新文章" href="#{recentLink}"
+                class="nav">
+                    最新文章
+                </a>
+            </li>
+            <li>
+                <a title="72小时阅读排行" href="#{recentReadLink}"
+                class="nav hot_nav">
+                    72小时阅读排行
+                </a>
+            </li>
+               <li>
+                <a title="豆约翰博客备份专家" href="#{spaceUrl}"
+                class="nav hot_nav">
+                    豆约翰博客备份专家
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="nav_block_right">
+        <form method="get" action="#{searchAction}">
+            <a href="#{lnkPicked}" target="_blank">刷新</a>
+            <a href="#{lnkViews}" target="_blank">
+                <img align="middle" src="~img/icon_rss.gif" alt="Rss">
+            </a>
+		    <input type="text" name="txtSearch" value="#{SearchKey}" class="input_zzk">
+		    <input type="submit" value="找找看" class="btn_zzk">
+		</form>
+    </div>
+<!--    <div class="nav_block_right">
+        <a href="/tech/reflesh">
+            刷新
+        </a>
+        <a href="/rss" target="_blank">
+            <img align="middle" src="~img/icon_rss.gif"
+            alt="Rss">
+        </a>
+        <input type="text" name="txtSearch" class="input_zzk">
+        <input type="button" onclick="location.href='/search/tech/'+encodeURI(document.getElementsByName('txtSearch')[0].value);"
+        value="找找看" class="btn_zzk">
+    </div>-->
+    <div class="clear">
+    </div>
+</div>

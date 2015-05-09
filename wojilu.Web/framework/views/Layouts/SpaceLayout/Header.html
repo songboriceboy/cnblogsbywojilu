@@ -1,0 +1,40 @@
+﻿<div id="body_header">
+    <h1 id="labSpaceName">
+        #{m.NickName}
+    </h1>
+    <h2 id="labSpaceIntro">
+        #{m.Description}
+    </h2>
+    <ul class="personalnav" id="headRightMenu">
+    <li><a href="#{RegLink}">#{labUserName}</a></li>
+    <li><a id="logStatus" href="#{LoginLink}"class="postCmd link">#{logStatus}</a></li>
+    <li  style= "visibility: hidden"><a href="/cyq1162-chinese">中文</a></li>
+    <li style= "visibility: hidden"><a href="/cyq1162-english">English</a></li></ul>
+    <ul class="menu" id="headMenu">
+        <!-- BEGIN navLink -->
+        <li class="rootLi">
+            <!-- BEGIN rootNav -->
+            <a href="#{menu.Link}" style="#{menu.Style}" #{menu.LinkTarget}>
+                #{menu.Name}
+            </a>
+            <!-- END rootNav -->
+            <!-- BEGIN subNav -->
+            <span class="menuMore" list="subMenus#{menu.Id}">
+                <a href="#{menu.Link}" style="#{menu.Style}" #{menu.LinkTarget}>
+                    #{menu.Name}
+                </a>
+                <ul id="Ul1" class="menuItems" style="width:120px;margin:0px;padding:10px 0px;">
+                    <!-- BEGIN subMenu -->
+                    <li style="width:100px;margin:0px;padding:5px 10px;">
+                        <a href="#{menu.Link}" style="#{menu.Style}" #{menu.LinkTarget}>
+                            #{menu.Name}
+                        </a>
+                    </li>
+                    <!-- END subMenu -->
+                </ul>
+            </span>
+            <!-- END subNav -->
+        </li>
+        <!-- END navLink -->
+    </ul>
+</div>

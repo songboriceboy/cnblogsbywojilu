@@ -1,0 +1,133 @@
+﻿<div class="main">
+    #{layout_content}
+    <div class="side_nav">
+        <div class="l_s">
+        </div>
+        <p class="r_l_3">
+        </p>
+        <p class="r_l_2">
+        </p>
+        <p class="r_l_1">
+        </p>
+        <div class="w_l">
+            <h4>
+                全部博客
+            </h4>
+            <div class="blogger_list">
+                <ul count="110">
+                    <!-- BEGIN users -->
+                    <li>
+                        #{user.No}.
+                        <a href="#{user.Link}" target="_blank" style="display: inline">
+                            #{user.Name}
+                        </a>
+                    </li>
+                    <!-- END users -->
+                </ul>
+            </div>
+        </div>
+        <p class="r_l_1">
+        </p>
+        <p class="r_l_2">
+        </p>
+        <p class="r_l_3">
+        </p>
+        <div class="l_s">
+        </div>
+        <p class="r_l_3">
+        </p>
+        <p class="r_l_2">
+        </p>
+        <p class="r_l_1">
+        </p>
+        <div class="w_l">
+            <h4>
+                站点信息统计
+            </h4>
+            <div class="site_stats">
+                <ul>
+                    <li>
+                        <label>
+                            用户
+                        </label>
+                        -
+                        <span>
+                            #{m.UserCount}
+                        </span>
+                    </li>
+                    <li>
+                        <label>
+                            文章
+                        </label>
+                        -
+                        <span>
+                            #{m.BlogCount}
+                        </span>
+                    </li>
+                    <li>
+                        <label>
+                            文章评论
+                        </label>
+                        -
+                        <span>
+                            #{m.BlogCommentCount}
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="r_l_1">
+        </p>
+        <p class="r_l_2">
+        </p>
+        <p class="r_l_3">
+        </p>
+    </div>
+    <div class="side_right">
+        
+        <div class="w_r">
+            <h4>
+                <a class="s_r_t" href="/douyuehan">
+                    豆约翰推荐
+                </a>
+            </h4>
+            <ul>
+            <!-- BEGIN bloglistbest -->
+                <li>
+                    <a href="#{blogpost.Url}" title="#{blogpost.Title}"
+                    target="_blank">
+                        #{blogpost.Title}
+                    </a>
+                </li>
+            <!-- END bloglistbest -->
+            </ul>
+        </div>
+        
+        <div adkey="Home_B2" class="mygd_right">
+            <a title="豆约翰博客备份专家" target="_blank" href="#">
+                <img width="300px" height="200px" border="0" src="~img/blogback.jpg">
+            </a>
+        </div>
+        
+        <div class="w_r">
+            <h4>
+                <a class="s_r_t" href="###">
+                    72小时点击排行
+                </a>
+            </h4>
+            <ul count="10">
+            <!-- BEGIN bloglist -->
+                <li>
+                    <a href="#{blogpost.Url}" title="#{blogpost.Title}"
+                    target="_blank">
+                        #{blogpost.Title}
+                    </a>
+                </li>
+           <!-- END bloglist -->
+            </ul>
+        </div>
+        <div adkey="Home_B4" class="mygd_right">
+        </div>
+    </div>
+    
+</div>
