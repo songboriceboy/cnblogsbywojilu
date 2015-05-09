@@ -1,0 +1,53 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>插入标签</title>
+    <style>
+        body {
+            font-size: 13px;
+            font-family: Verdana,Arial,Helvetica,sans-serif;
+            line-height: 1.8;
+        }
+
+        a {
+            margin-right: 10px;
+        }
+
+        a:link, a:visited, a:active {
+            color: #015FB6;
+        }
+
+        a:hover {
+            color: #E33E06;
+        }
+    </style>
+    
+    <script src="~js/aaxiaow/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        document.domain = 'cnblogs.' + location.hostname.substring(location.hostname.lastIndexOf(".") + 1, location.hostname.length);
+        function InsertTag(tagname) {
+            var decodedTag = $('<div />').html(tagname).text();
+            var txbTag = window.opener.document.getElementById("Editor_Edit_Advanced_txbTag");
+            if (txbTag.value == '') {
+                txbTag.value += decodedTag;
+            }
+            else {
+                txbTag.value += "," + decodedTag;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="taglist">
+    <!-- BEGIN list -->
+    
+                <a onclick="InsertTag('#{tag.Name}')" href="#">#{tag.Name}</a>
+                
+    <!-- END list -->
+                
+    </div>
+
+
+
+</body>
+</html>

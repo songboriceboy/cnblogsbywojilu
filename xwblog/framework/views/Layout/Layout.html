@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://imziv.com/ZBLOG/article/index.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Ziv小威</title>
+<base href="/ZBLOG">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="keywords" content="Ziv,Ziv小威,Java博客系统"><!--  meta 元素定义页面的关键词 -->
+<meta http-equiv="description" content="Ziv小威的私人博客,开源的Java博客系统"><!-- meta 元素定义页面的描述 -->
+<link href="~images/aaxiaow/head_pic.png" type="image/png" rel="icon">
+<link href="~css/front-style.css" rel="stylesheet" type="text/css"><!--  定义文档与外部资源之间的关系 -->
+<link href="~css/bootstrap.css" rel="stylesheet" type="text/css">
+<script async="" src="~js/analytics.js"></script>
+<script language="javascript" type="text/javascript" src="~js/jquery-1.8.0.js"></script><!--  定义客户端脚本 -->
+<script language="javascript" type="text/javascript" src="~js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="~js/common.js"></script>
+</head>
+
+<body>
+
+<div class="nav-wrapper">
+	<div>
+    	<div id="userLogin"><a href="#{adminLink}">后台管理</a> <br /><a href="#{loginLink}">用户登录</a></div>
+    </div>
+    <div id="top">
+        <div class="logo"><a href="#{showLink}"><img src="~img/aaxiaow/z_logo.png"></a></div>
+        <div class="nav">
+        	<ul>
+            	<li><a rel="tooltip" title="首页" href="#{showLink}">首页</a></li>    	
+            	<li><a rel="tooltip" title="日志列表" href="#{articleLink}">日志列表</a></li>
+                <li><a rel="tooltip" title="Lab项目" href="http://imziv.com/ZBLOG/view/page.htm?id=3">Lab项目</a></li>            		
+            	<li><a rel="tooltip" title="GitHub" href="https://github.com/wewoor">GitHub</a></li>            		      	
+                <li><a rel="tooltip" title="关于" href="http://imziv.com/ZBLOG/view/page.htm?id=6">关于</a></li>            		
+            </ul>
+        </div>
+    </div>
+</div>
+	<!-- container ---->
+	#{layout_content}
+	<!-- container end---->	
+<!--footer---->
+<div id="footer">
+	<p>
+		Copyright © Ziv小威 2013,Design and Code by Ziv,Build in Java language.
+	</p>
+</div>
+<div id="gotoTop" title="返回顶部">↑</div>
+<script language="javascript" charset="utf-8" type="text/javascript">
+	$(document).ready(function(){
+		//向上滚动
+		$("#gotoTop").click(function() {
+			window.scrollTo(0,0);
+		});
+	});
+</script>
+</body>
+</html>

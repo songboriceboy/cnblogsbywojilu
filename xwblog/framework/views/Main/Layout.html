@@ -1,0 +1,59 @@
+﻿<div id="container">
+		#{layout_content}
+    	<div class="main-right">
+		   <!-- 搜索 -->
+		   <div class="catTag">
+
+    		</div>
+	        <!-- 文章分类列表 -->
+    		<div class="catTag">
+    			<h5>分类&gt;</h5>
+    			<ul>
+    				<li><a href="#{ListLinkAll}">全部文章(#{totalCount})</a></li>
+						<!-- BEGIN categories -->
+    					<li #{c.Selected}><a href="#{c.ShowLink}">#{c.Name}(#{c.Count})</a></li>
+						<!-- END categories -->
+    			</ul>
+    		</div>
+    		<!-- 归档列表 -->
+    		<div class="hotArt">
+    			<h5>归档&gt;</h5>
+    			<ul>
+    			<!-- BEGIN file -->
+    					<li><a href="#{f.TimeLink}">
+    						#{f.Time}(#{f.Count})
+    					</a></li>
+				<!-- END file -->    					
+    			</ul>
+    		</div>
+    		<!-- 热门文章 -->
+    		<div class="hotArt">
+    			<h5>热门文章&gt;</h5>
+    			<ul>
+				<!-- BEGIN top -->
+				<li><a title=#{a.Title} target="_blank" href="#{a.ReadLink}">#{a.Title}</a></li>
+				<!-- END top -->
+    			</ul>
+    		</div>
+    		<!-- 分类标签 -->
+    		<div class="catTag">
+    			<h5>标签列表&gt;</h5>
+    			<ul>
+						<!-- BEGIN tag -->
+    					<li><a href="#{t.ShowLink}">#{t.Name}(#{t.CountTag})</a></li>
+						<!-- END tag -->
+    			</ul>
+    		</div>
+    		<!-- 友情链接 -->
+    		<div class="friLink">
+    			<h5>友情链接&gt;</h5>
+    			<ul>
+						<!-- BEGIN link -->
+    					<li><a target="_blank" href="#{l.Address}">l.Name</a></li>
+						<!-- END link -->
+    			</ul>
+    		</div>    	   	
+    		</div>
+	 	<!-- 	mainRight end -->
+	 	<div style="width:100%;clear:both"></div>
+	</div>

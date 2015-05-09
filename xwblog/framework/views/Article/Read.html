@@ -1,0 +1,103 @@
+﻿<div id="container">
+<div id="article">
+			<h2 align="left">
+				<a href="javascript:;">
+					#{article.Title}
+				</a>
+			</h2>
+			<div class="detail-content" style="height:auto;">
+			#{article.Content}
+			</div>
+			<div class="arInfo">	
+				<ul>
+					<li>写于：#{article.Created}</li>
+					<li>阅读次数：#{article.ReadCount}</li>
+					<li><a href="#{article.ReadLink}">评论(#{article.CommentCount})</a></li>
+				</ul>
+					<span>
+						标签：
+						<!-- BEGIN listTags -->
+							<a href="#{article.ListLink}">#{article.Tag.Name}</a>
+						<!-- END listTags -->
+					</span>	
+			</div>
+		</div>
+		<br />
+		<br />
+		
+<!-- 评论 -->
+<div id="blog-comments-placeholder">
+<div id="comments_pager_top"></div>
+<br>
+<div>
+<legend>发表评论</legend>
+</div>
+<div class="feedbackNoItems"></div>
+		<div class="feedbackItem">
+				<!-- BEGIN listcomment -->
+		
+			<div class="feedbackListSubtitle">
+<!--				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"><a href="javascript:void(0);" onclick="return ReplyComment(2265027,'yzOy70zGhm3Y8fYlNnX+dkTD8MOFmRa/UgSrF/t7GbK6K9YMMkgHEg==')">回复</a><a href="javascript:void(0);" onclick="return QuoteComment(2265027,'yzOy70zGhm3Y8fYlNnX+dkTD8MOFmRa/UgSrF/t7GbK6K9YMMkgHEg==')">引用</a></span>
+				</div>-->
+				
+				<a href="#" class="layer">##{comment.OrderBy}楼</a>
+				<a name="2265027" id="comment_anchor_2265027"></a> 
+				<span class="comment_date">#{comment.Created}</span> | <a id="a_comment_author_2265027" href="#{comment.BlogAddress}" target="_blank">#{comment.UserName}</a> 
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2265027" class="blog_comment_body">&nbsp;&nbsp;&nbsp;&nbsp;#{comment.Content}</div>
+<!--				<div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2265027,'Digg',this)">支持(0)</a>
+				<a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2265027,'Bury',this)">反对(0)</a></div>
+				<span id="comment_2265027_avatar" style="display:none;">http://pic.cnitblog.com/face/u108796.jpg</span><br>-->
+			</div>
+				<!-- END listcomment -->
+			
+		</div>
+		
+	<div id="comments_pager_bottom"></div>
+	</div>
+<!-- 评论 -->		
+		
+<!-- 留言板 -->
+<div id="comment">
+			<form id="formCoom" class="form-horizontal" action="#{CommentLink}">
+				<fieldset>
+    			<legend>留言板</legend>
+				  <div class="control-group">
+				    <label class="control-label" for="inputName">用户名：</label>
+				    <div class="controls">
+				      <input type="text" id="inputName" name="userName" placeholder="用户名/昵称">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="inputBlogUrl">博客地址：</label>
+				    <div class="controls">
+				      <input type="text" id="inputBlogUrl" name="blogUrl" width="300px" placeholder="博客地址">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="inputEmail">邮箱地址：</label>
+				    <div class="controls">
+				      <input type="text" id="inputEmail" name="email" width="300px" placeholder="邮箱地址">
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="inputContent">留言内容：</label>
+				    <div class="controls">
+				      <textarea rows="3" id="inputContent" name="content" width="300px" placeholder="留言内容"></textarea>
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <div class="controls">
+				    	<input type="hidden" id="feedbackUser" name="feedback" value="">
+				    	<input type="hidden" id="fatherId" name="fatherComm" value="">
+				    	<input type="hidden" id="articleId" name="articleId" value="40">
+				    	<input type="submit" id="Submit1" class="btn"></input>				    	
+				    </div>
+				  </div>
+				</fieldset>
+			</form>
+		</div>
+<!-- 显示留言 -->
+</div>	

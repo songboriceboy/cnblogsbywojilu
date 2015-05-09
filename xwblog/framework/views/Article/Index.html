@@ -1,0 +1,25 @@
+﻿<div class="main-left">
+
+			<div id="article">
+				<h3>日志列表：</h3>
+				<table class="table table-hover">
+					<tr>
+					    <td>ID</td>
+					    <td>标题</td>
+					    <td>编写时间</td>
+					    <td>访问次数</td>
+					</tr>
+					<!-- BEGIN list -->
+					<tr>
+						<td>#{article.Id}</td>
+						<td width="550px"><a href="#{article.ReadLink}">#{article.Title}</a></td>
+						<td>#{article.Created}</td>
+						<td>#{article.ReadCount}</td>
+					</tr>	
+					<!-- END list -->
+				</table>
+			</div>
+			<!--分页 -->
+		       
+<div>#{page}</div>
+		</div>

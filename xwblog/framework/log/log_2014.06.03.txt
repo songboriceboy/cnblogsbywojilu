@@ -1,0 +1,155 @@
+﻿2014/6/3 18:39:51 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/Admin/Article/Index.aspx
+ex.Message=property 'Tag' of wojilu.cms.Domain.Article is empty
+ex.Source=wojilu
+ex.StackTrace=   在 wojilu.ObjectBase`1.get(String propertyName) 位置 D:\xwblog\wojilu\_wojilu\ObjectBase.cs:行号 179
+   在 wojilu.Web.Templates.Tokens.VarToken.getpvalue(Object obj, String pname) 位置 D:\xwblog\wojilu\Web\Templates\Tokens\VarToken.cs:行号 93
+   在 wojilu.Web.Templates.Tokens.VarToken.getPropertyValue(Object obj, String[] _objAccessor) 位置 D:\xwblog\wojilu\Web\Templates\Tokens\VarToken.cs:行号 82
+   在 wojilu.Web.Templates.Tokens.VarToken.appendData(StringBuilder sb, ContentBlock block, BlockData blockdata) 位置 D:\xwblog\wojilu\Web\Templates\Tokens\VarToken.cs:行号 62
+   在 wojilu.Web.ContentBlock.addResultOne(StringBuilder sb, BlockData data) 位置 D:\xwblog\wojilu\Web\Templates\ContentBlock.cs:行号 152
+   在 wojilu.Web.Templates.Tokens.BlockToken.appendData(StringBuilder sb, ContentBlock block, BlockData blockdata) 位置 D:\xwblog\wojilu\Web\Templates\Tokens\BlockToken.cs:行号 43
+   在 wojilu.Web.ContentBlock.addResultOne(StringBuilder sb, BlockData data) 位置 D:\xwblog\wojilu\Web\Templates\ContentBlock.cs:行号 152
+   在 wojilu.Web.ContentBlock.ToString() 位置 D:\xwblog\wojilu\Web\Templates\ContentBlock.cs:行号 145
+   在 wojilu.Web.Template.ToString() 位置 D:\xwblog\wojilu\Web\Templates\Template.cs:行号 152
+   在 wojilu.Web.Mvc.ControllerCore.getActionResult() 位置 D:\xwblog\wojilu\Web\Mvc\ControllerCore.cs:行号 74
+   在 wojilu.Web.Mvc.Utils.ControllerRunner.runAction(ControllerBase controller, String actionName) 位置 D:\xwblog\wojilu\Web\Mvc\Utils\ControllerRunner.cs:行号 86
+   在 wojilu.Web.Mvc.ControllerCore.runAction(String actionName) 位置 D:\xwblog\wojilu\Web\Mvc\ControllerCore.cs:行号 269
+   在 wojilu.Web.Mvc.ControllerCore.runAction() 位置 D:\xwblog\wojilu\Web\Mvc\ControllerCore.cs:行号 260
+   在 wojilu.Web.Mvc.Utils.ActionRunner.runAction(MvcContext ctx, ControllerBase controller, MethodInfo actionMethod, aAction run, Boolean isLayout) 位置 D:\xwblog\wojilu\Web\Mvc\Utils\ActionRunner.cs:行号 49
+   在 wojilu.Web.Mvc.Utils.ActionRunner.runAction(MvcContext ctx, ControllerBase controller, MethodInfo actionMethod, aAction run) 位置 D:\xwblog\wojilu\Web\Mvc\Utils\ActionRunner.cs:行号 35
+   在 wojilu.Web.Mvc.Processors.ActionProcessor.Process(ProcessContext context) 位置 D:\xwblog\wojilu\Web\Mvc\Processors\ActionProcessor.cs:行号 69
+   在 wojilu.Web.Mvc.ProcessContext.Begin(MvcContext ctx) 位置 D:\xwblog\wojilu\Web\Mvc\ProcessContext.cs:行号 104
+   在 wojilu.Web.Mvc.CoreHandler.ProcessRequest(HttpContext context) 位置 D:\xwblog\wojilu\Web\Mvc\CoreHandler.cs:行号 49
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 18:48:37 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 18:49:04 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/Admin/Article/Index.aspx
+ex.Message=property 'Tag' of wojilu.cms.Domain.Article is empty
+ex.Source=wojilu
+ex.StackTrace=   在 wojilu.ObjectBase`1.get(String propertyName) 位置 D:\xwblog\wojilu\_wojilu\ObjectBase.cs:行号 179
+   在 wojilu.Web.Templates.Tokens.VarToken.getpvalue(Object obj, String pname) 位置 D:\xwblog\wojilu\Web\Templates\Tokens\VarToken.cs:行号 93
+   在 wojilu.Web.Templates.Tokens.VarToken.getPropertyValue(Object obj, String[] _objAccessor) 位置 D:\xwblog\wojilu\Web\Templates\Tokens\VarToken.cs:行号 82
+   在 wojilu.Web.Templates.Tokens.VarToken.appendData(StringBuilder sb, ContentBlock block, BlockData blockdata) 位置 D:\xwblog\wojilu\Web\Templates\Tokens\VarToken.cs:行号 62
+   在 wojilu.Web.ContentBlock.addResultOne(StringBuilder sb, BlockData data) 位置 D:\xwblog\wojilu\Web\Templates\ContentBlock.cs:行号 152
+   在 wojilu.Web.Templates.Tokens.BlockToken.appendData(StringBuilder sb, ContentBlock block, BlockData blockdata) 位置 D:\xwblog\wojilu\Web\Templates\Tokens\BlockToken.cs:行号 43
+   在 wojilu.Web.ContentBlock.addResultOne(StringBuilder sb, BlockData data) 位置 D:\xwblog\wojilu\Web\Templates\ContentBlock.cs:行号 152
+   在 wojilu.Web.ContentBlock.ToString() 位置 D:\xwblog\wojilu\Web\Templates\ContentBlock.cs:行号 145
+   在 wojilu.Web.Template.ToString() 位置 D:\xwblog\wojilu\Web\Templates\Template.cs:行号 152
+   在 wojilu.Web.Mvc.ControllerCore.getActionResult() 位置 D:\xwblog\wojilu\Web\Mvc\ControllerCore.cs:行号 74
+   在 wojilu.Web.Mvc.Utils.ControllerRunner.runAction(ControllerBase controller, String actionName) 位置 D:\xwblog\wojilu\Web\Mvc\Utils\ControllerRunner.cs:行号 86
+   在 wojilu.Web.Mvc.ControllerCore.runAction(String actionName) 位置 D:\xwblog\wojilu\Web\Mvc\ControllerCore.cs:行号 269
+   在 wojilu.Web.Mvc.ControllerCore.runAction() 位置 D:\xwblog\wojilu\Web\Mvc\ControllerCore.cs:行号 260
+   在 wojilu.Web.Mvc.Utils.ActionRunner.runAction(MvcContext ctx, ControllerBase controller, MethodInfo actionMethod, aAction run, Boolean isLayout) 位置 D:\xwblog\wojilu\Web\Mvc\Utils\ActionRunner.cs:行号 49
+   在 wojilu.Web.Mvc.Utils.ActionRunner.runAction(MvcContext ctx, ControllerBase controller, MethodInfo actionMethod, aAction run) 位置 D:\xwblog\wojilu\Web\Mvc\Utils\ActionRunner.cs:行号 35
+   在 wojilu.Web.Mvc.Processors.ActionProcessor.Process(ProcessContext context) 位置 D:\xwblog\wojilu\Web\Mvc\Processors\ActionProcessor.cs:行号 69
+   在 wojilu.Web.Mvc.ProcessContext.Begin(MvcContext ctx) 位置 D:\xwblog\wojilu\Web\Mvc\ProcessContext.cs:行号 104
+   在 wojilu.Web.Mvc.CoreHandler.ProcessRequest(HttpContext context) 位置 D:\xwblog\wojilu\Web\Mvc\CoreHandler.cs:行号 49
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 18:49:55 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 18:53:35 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 107
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/3 18:53:53 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 107
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/3 18:58:45 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 107
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/3 19:00:13 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 107
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/3 19:01:01 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 107
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/3 19:11:17 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 19:11:32 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 19:11:43 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 19:13:18 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/bundles/blog-common.css?v=iQQnf2q8V83bi9LbN6IvkHJyxj8GLI9A8HLPvxO-IBQ1
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 19:13:18 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/Skins/LoveIsIntheAir/images/logo.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/3 19:14:26 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 

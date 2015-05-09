@@ -1,0 +1,258 @@
+﻿2014/6/6 18:56:51 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/aaxiaow/head_pic.png
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 18:56:51 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/aaxiaow/head_pic.png
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 18:58:06 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/css/wojilu.site.css?v=0001
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 18:58:06 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/favicon.ico
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 18:58:06 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/favicon.ico
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 18:58:06 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/favicon.ico
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 18:59:08 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/Admin/Article/4/Edit.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.Admin.ArticleController.Edit(Int32 id) 位置 D:\xwblog\wojilu.cms\Controller\Admin\ArticleController.cs:行号 224
+ 
+2014/6/6 18:59:09 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/Admin/Article/4/Edit.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.Admin.ArticleController.Edit(Int32 id) 位置 D:\xwblog\wojilu.cms\Controller\Admin\ArticleController.cs:行号 224
+ 
+2014/6/6 18:59:19 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/Admin/Article/4/Edit.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.Admin.ArticleController.Edit(Int32 id) 位置 D:\xwblog\wojilu.cms\Controller\Admin\ArticleController.cs:行号 224
+ 
+2014/6/6 19:01:36 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:01:43 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 109
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:01:46 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 109
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:01:47 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 109
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:01:48 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 109
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:02:58 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 109
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:05:30 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 109
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:06:18 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:08:15 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:08:20 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:41:13 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:45:10 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:46:24 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:46:45 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:47:34 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:51:16 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:51:23 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 107
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:52:29 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 107
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:52:45 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/default.aspx
+ex.Message=未将对象引用设置到对象的实例。
+ex.Source=wojilu.cms
+ex.StackTrace=   在 wojilu.cms.Controller.MainController.filterTags(List`1 tags, Article article, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 107
+   在 wojilu.cms.Controller.MainController.bindArticleAndTag(List`1 articles, List`1 tags, List`1 articleAndtags) 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 84
+   在 wojilu.cms.Controller.MainController.Index() 位置 D:\xwblog\wojilu.cms\Controller\MainController.cs:行号 53
+ 
+2014/6/6 19:54:16 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 19:55:54 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 20:00:10 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2014/6/6 20:03:04 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:3707/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
