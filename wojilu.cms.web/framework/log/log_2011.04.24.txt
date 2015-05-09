@@ -1,0 +1,29 @@
+﻿2011-3-11 9:04:13 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:5773/xy.aspx
+ex.Message=控制器不存在: xy
+ex.Source=wojilu
+ex.StackTrace=   在 wojilu.Web.Context.ContextInitBase.InitController(MvcContext ctx) 位置 D:\Projects\wojilu\wojilu\Web\Context\ContextInitBase.cs:行号 60
+   在 wojilu.Web.Mvc.Processors.InitContextProcessor.Process(ProcessContext context) 位置 D:\Projects\wojilu\wojilu\Web\Mvc\Processors\InitContextProcessor.cs:行号 42
+   在 wojilu.Web.Mvc.ProcessContext.processMain(ProcessContext context) 位置 D:\Projects\wojilu\wojilu\Web\Mvc\ProcessContext.cs:行号 115
+   在 wojilu.Web.Mvc.ProcessContext.Begin(MvcContext ctx) 位置 D:\Projects\wojilu\wojilu\Web\Mvc\ProcessContext.cs:行号 101
+   在 wojilu.Web.Mvc.CoreHandler.ProcessRequest(HttpContext context) 位置 D:\Projects\wojilu\wojilu\Web\Mvc\CoreHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2011-3-11 9:10:35 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:5773/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2011-3-11 9:11:40 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:5773/static/img/site/toolbar_hover.gif
+ex.Message=文件不存在
+ex.Source=System.Web
+ex.StackTrace=   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 

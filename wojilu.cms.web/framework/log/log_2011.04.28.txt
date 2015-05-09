@@ -1,0 +1,50 @@
+﻿2011-4-25 9:53:43 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:5773/Article/5/1.aspx
+ex.Message=控制器不存在: Article.5
+ex.Source=wojilu
+ex.StackTrace=   在 wojilu.Web.Context.ContextInitBase.InitController(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Context\ContextInitBase.cs:行号 60
+   在 wojilu.Web.Mvc.Processors.InitContextProcessor.Process(ProcessContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\Processors\InitContextProcessor.cs:行号 44
+   在 wojilu.Web.Mvc.ProcessContext.Begin(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\ProcessContext.cs:行号 98
+   在 wojilu.Web.Mvc.CoreHandler.ProcessRequest(HttpContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\CoreHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2011-4-25 9:56:55 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:5773/article/5/1.aspx
+ex.Message=控制器不存在: article.Article
+ex.Source=wojilu
+ex.StackTrace=   在 wojilu.Web.Context.ContextInitBase.InitController(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Context\ContextInitBase.cs:行号 60
+   在 wojilu.Web.Mvc.Processors.InitContextProcessor.Process(ProcessContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\Processors\InitContextProcessor.cs:行号 44
+   在 wojilu.Web.Mvc.ProcessContext.Begin(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\ProcessContext.cs:行号 98
+   在 wojilu.Web.Mvc.CoreHandler.ProcessRequest(HttpContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\CoreHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2011-4-25 9:57:28 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:5773/Article/5/1.aspx
+ex.Message=控制器不存在: Article.5
+ex.Source=wojilu
+ex.StackTrace=   在 wojilu.Web.Context.ContextInitBase.InitController(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Context\ContextInitBase.cs:行号 60
+   在 wojilu.Web.Mvc.Processors.InitContextProcessor.Process(ProcessContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\Processors\InitContextProcessor.cs:行号 44
+   在 wojilu.Web.Mvc.ProcessContext.Begin(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\ProcessContext.cs:行号 98
+   在 wojilu.Web.Mvc.CoreHandler.ProcessRequest(HttpContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\CoreHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2011-4-25 9:57:34 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:5773/article/5/1.aspx
+ex.Message=控制器不存在: article.Article
+ex.Source=wojilu
+ex.StackTrace=   在 wojilu.Web.Context.ContextInitBase.InitController(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Context\ContextInitBase.cs:行号 60
+   在 wojilu.Web.Mvc.Processors.InitContextProcessor.Process(ProcessContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\Processors\InitContextProcessor.cs:行号 44
+   在 wojilu.Web.Mvc.ProcessContext.Begin(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\ProcessContext.cs:行号 98
+   在 wojilu.Web.Mvc.CoreHandler.ProcessRequest(HttpContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\CoreHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
+2011-4-25 9:57:35 error wojilu.Web.GlobalApp.AppGlobalLogger - url=http://localhost:5773/article/5/1.aspx
+ex.Message=控制器不存在: article.Article
+ex.Source=wojilu
+ex.StackTrace=   在 wojilu.Web.Context.ContextInitBase.InitController(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Context\ContextInitBase.cs:行号 60
+   在 wojilu.Web.Mvc.Processors.InitContextProcessor.Process(ProcessContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\Processors\InitContextProcessor.cs:行号 44
+   在 wojilu.Web.Mvc.ProcessContext.Begin(MvcContext ctx) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\ProcessContext.cs:行号 98
+   在 wojilu.Web.Mvc.CoreHandler.ProcessRequest(HttpContext context) 位置 G:\Projects\wojilu\wojilu\Web\Mvc\CoreHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 
