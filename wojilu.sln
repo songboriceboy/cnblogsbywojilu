@@ -1,6 +1,10 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF91C4D6-4936-4165-AD8E-5954DBEE25AF}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wojilu", "wojilu\wojilu.csproj", "{5912B6E1-6099-4392-9A67-AFD3A8AA4343}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wojilu.Core", "wojilu.Core\wojilu.Core.csproj", "{5D4E912F-B5A1-4E58-BFE1-62FCD30CC9E6}"
@@ -8,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wojilu.Apps", "wojilu.Apps\wojilu.Apps.csproj", "{2C3A61B8-3AFD-45D2-B81E-FBC652D0ADC2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wojilu.Controller", "wojilu.Controller\wojilu.Controller.csproj", "{A4E94F40-1DD2-4869-8D2E-3E3AE67B0CBB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF91C4D6-4936-4165-AD8E-5954DBEE25AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wojilu.Web", "wojilu.Web\wojilu.Web.csproj", "{F0616D33-F9B2-4C3F-AC47-A42128C22BBE}"
 EndProject
@@ -30,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{9FE00521-3A8B-42B1-814E-585E99407B2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{38D7AA58-C95B-449B-86C6-A8073A56E11F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NReadability", "NReadability\NReadability.csproj", "{14FC8145-1355-4A3D-A56E-26E3FD3C356E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +183,16 @@ Global
 		{38D7AA58-C95B-449B-86C6-A8073A56E11F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38D7AA58-C95B-449B-86C6-A8073A56E11F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{38D7AA58-C95B-449B-86C6-A8073A56E11F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Release|.NET.ActiveCfg = Release|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{14FC8145-1355-4A3D-A56E-26E3FD3C356E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
