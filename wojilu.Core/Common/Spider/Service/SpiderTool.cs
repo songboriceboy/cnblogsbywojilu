@@ -8,9 +8,9 @@ using wojilu.Net;
 using System.Threading;
 using wojilu.Common.Spider.Interface;
 using HtmlAgilityPack;
-using Fizzler;
-using Fizzler.Systems.HtmlAgilityPack;
-using System.Linq;
+//using Fizzler;
+//using Fizzler.Systems.HtmlAgilityPack;
+//using System.Linq;
 using wojilu.Members.Users.Domain;
 using System.Collections;
 using BlogGather;
@@ -68,16 +68,16 @@ namespace wojilu.Common.Spider.Service {
             else
                 return new Uri(strPath).GetLeftPart(UriPartial.Authority);
         }
-        protected static string NormalizeLink(string baseUrl, string link)
-        {
-            return link.NormalizeUrl(baseUrl);
-        }
-        protected static string GetNormalizedLink(string baseUrl, string decodedLink)
-        {
-            string normalizedLink = NormalizeLink(baseUrl, decodedLink);
+        //protected static string NormalizeLink(string baseUrl, string link)
+        //{
+        //    return link.NormalizeUrl(baseUrl);
+        //}
+        //protected static string GetNormalizedLink(string baseUrl, string decodedLink)
+        //{
+        //    string normalizedLink = NormalizeLink(baseUrl, decodedLink);
 
-            return normalizedLink;
-        }
+        //    return normalizedLink;
+        //}
         protected static HtmlAgilityPack.HtmlDocument GetHtmlDocument(string strPage)
         {
             HtmlAgilityPack.HtmlDocument htmlDoc = new HtmlAgilityPack.HtmlDocument
@@ -92,92 +92,92 @@ namespace wojilu.Common.Spider.Service {
 
             return htmlDoc;
         }
-        protected static void SaveUrlToDB(string strReturnPage, SpiderTemplate s, List<DetailLink> list)
-        {
+        //protected static void SaveUrlToDB(string strReturnPage, SpiderTemplate s, List<DetailLink> list)
+        //{
                    
-            Dictionary<string, string> m_dicLink2Text = new Dictionary<string, string>();
-            string strUrlFilterRule = s.ListPattern;
-            //strUrlFilterRule = ParseUrl(strUrlFilterRule);
-            HtmlAgilityPack.HtmlDocument htmlDoc = GetHtmlDocument(strReturnPage);
+        //    Dictionary<string, string> m_dicLink2Text = new Dictionary<string, string>();
+        //    string strUrlFilterRule = s.ListPattern;
+        //    //strUrlFilterRule = ParseUrl(strUrlFilterRule);
+        //    HtmlAgilityPack.HtmlDocument htmlDoc = GetHtmlDocument(strReturnPage);
 
-           // string baseUrl = new Uri(strVisitUrl).GetLeftPart(UriPartial.Authority);
-            string baseUrl = GetUrlLeftPart(s.ListUrl);
-            DocumentWithLinks links = htmlDoc.GetLinks();
-            bool bNoArticle = true;
-            List<string> lstRevomeSame = new List<string>();
+        //   // string baseUrl = new Uri(strVisitUrl).GetLeftPart(UriPartial.Authority);
+        //    string baseUrl = GetUrlLeftPart(s.ListUrl);
+        //    DocumentWithLinks links = htmlDoc.GetLinks();
+        //    bool bNoArticle = true;
+        //    List<string> lstRevomeSame = new List<string>();
 
-          //  int nCountPerPage = 0;
-          //  bool bExistFind = false;
-          //  List<string> lstNeedDownLoad = new List<string>();
-            foreach (string link in links.Links.Union(links.References))
-            {
+        //  //  int nCountPerPage = 0;
+        //  //  bool bExistFind = false;
+        //  //  List<string> lstNeedDownLoad = new List<string>();
+        //    foreach (string link in links.Links.Union(links.References))
+        //    {
                 
-                if (string.IsNullOrEmpty(link))
-                {
-                    continue;
-                }
+        //        if (string.IsNullOrEmpty(link))
+        //        {
+        //            continue;
+        //        }
 
-                //string decodedLink = ExtendedHtmlUtility.HtmlEntityDecode(link);
-                string decodedLink = link;
-                //if (decodedLink != link)
-                //{
-                //    int a = 1;
-                //}
-                //Console.WriteLine(decodedLink);
-                string normalizedLink = GetNormalizedLink(baseUrl, decodedLink);
-                //Console.WriteLine(normalizedLink);
+        //        //string decodedLink = ExtendedHtmlUtility.HtmlEntityDecode(link);
+        //        string decodedLink = link;
+        //        //if (decodedLink != link)
+        //        //{
+        //        //    int a = 1;
+        //        //}
+        //        //Console.WriteLine(decodedLink);
+        //        string normalizedLink = GetNormalizedLink(baseUrl, decodedLink);
+        //        //Console.WriteLine(normalizedLink);
 
-                if (string.IsNullOrEmpty(normalizedLink))
-                {
-                    continue;
-                }
+        //        if (string.IsNullOrEmpty(normalizedLink))
+        //        {
+        //            continue;
+        //        }
 
-                MatchCollection matchs = Regex.Matches(normalizedLink, strUrlFilterRule, RegexOptions.Singleline);
-                if (matchs.Count > 0)
-                {
-                    string strLinkText = "";
+        //        MatchCollection matchs = Regex.Matches(normalizedLink, strUrlFilterRule, RegexOptions.Singleline);
+        //        if (matchs.Count > 0)
+        //        {
+        //            string strLinkText = "";
 
-                    foreach (string strTemp in links.m_dicLink2Text.Keys)
-                    {
-                        if (strTemp.Contains(normalizedLink))
-                        {
-                            strLinkText = links.m_dicLink2Text[strTemp];
-                            break;
-                        }
-                    }
-                    //if (links.m_dicLink2Text.Keys.Contains(normalizedLink))
-                    //    strLinkText = links.m_dicLink2Text[normalizedLink];
+        //            foreach (string strTemp in links.m_dicLink2Text.Keys)
+        //            {
+        //                if (strTemp.Contains(normalizedLink))
+        //                {
+        //                    strLinkText = links.m_dicLink2Text[strTemp];
+        //                    break;
+        //                }
+        //            }
+        //            //if (links.m_dicLink2Text.Keys.Contains(normalizedLink))
+        //            //    strLinkText = links.m_dicLink2Text[normalizedLink];
 
-                    if (strLinkText == "")
-                    {
-                        if (links.m_dicLink2Text.Keys.Contains(link))
-                            strLinkText = links.m_dicLink2Text[link].TrimEnd().TrimStart();
-                        if (links.m_dicLink2Text.Keys.Contains(link.ToLower()))
-                            strLinkText = links.m_dicLink2Text[link.ToLower()].TrimEnd().TrimStart();
-                    }
+        //            if (strLinkText == "")
+        //            {
+        //                if (links.m_dicLink2Text.Keys.Contains(link))
+        //                    strLinkText = links.m_dicLink2Text[link].TrimEnd().TrimStart();
+        //                if (links.m_dicLink2Text.Keys.Contains(link.ToLower()))
+        //                    strLinkText = links.m_dicLink2Text[link.ToLower()].TrimEnd().TrimStart();
+        //            }
               
-                    if (lstRevomeSame.Contains(normalizedLink))
-                        continue;
-                    else
-                        lstRevomeSame.Add(normalizedLink);
+        //            if (lstRevomeSame.Contains(normalizedLink))
+        //                continue;
+        //            else
+        //                lstRevomeSame.Add(normalizedLink);
                     
                     
-                    //bool bRet = AddLayerNodeToSaveUrlToDB(m_strWholeDbName, normalizedLink, ref strLinkText);
-                    DetailLink lnk = new DetailLink();
-                    lnk.Template = s;
-                    lnk.Url = normalizedLink;
-                    lnk.Title = strLinkText;
-                    list.Add(lnk);
-                }
-                //Console.WriteLine(" uri is " + normalizedLink.ToString());
-            }
+        //            //bool bRet = AddLayerNodeToSaveUrlToDB(m_strWholeDbName, normalizedLink, ref strLinkText);
+        //            DetailLink lnk = new DetailLink();
+        //            lnk.Template = s;
+        //            lnk.Url = normalizedLink;
+        //            lnk.Title = strLinkText;
+        //            list.Add(lnk);
+        //        }
+        //        //Console.WriteLine(" uri is " + normalizedLink.ToString());
+        //    }
 
            
            
 
-            return;
+        //    return;
 
-        }
+        //}
         public static List<DetailLink> getListItem(SpiderTemplate s, string page, StringBuilder sb)
         {
 
@@ -190,7 +190,7 @@ namespace wojilu.Common.Spider.Service {
             //    logger.Error( "list link match count=0" );
             //    logInfo( "list link match count=0", s, sb );
             //}
-            SaveUrlToDB(page, s, list);
+           // SaveUrlToDB(page, s, list);
             //for (int i = matchs.Count - 1; i >= 0; i--) {
             //    DetailLink dlink = 
 
@@ -379,18 +379,18 @@ namespace wojilu.Common.Spider.Service {
 
                 htmlDoc.LoadHtml( target );
                 try {
-                    IEnumerable<HtmlNode> Nodes = htmlDoc.DocumentNode.QuerySelectorAll( s.GetListBodyPattern() );
+                    //IEnumerable<HtmlNode> Nodes = htmlDoc.DocumentNode.QuerySelectorAll( s.GetListBodyPattern() );
 
-                    if (Nodes.Count() > 0) {
-                        logInfo( "匹配列表内容成功", s, sb );
-                        target = Nodes.ToArray()[0].OuterHtml;
-                        target = target.Trim();
-                        return target;
-                    }
-                    else {
-                        logInfo( "error=没有匹配的页面内容:" + s.ListUrl, s, sb );
-                        return null;
-                    }
+                    //if (Nodes.Count() > 0) {
+                    //    logInfo( "匹配列表内容成功", s, sb );
+                    //    target = Nodes.ToArray()[0].OuterHtml;
+                    //    target = target.Trim();
+                    //    return target;
+                    //}
+                    //else {
+                    //    logInfo( "error=没有匹配的页面内容:" + s.ListUrl, s, sb );
+                    //    return null;
+                    //}
                 }
                 catch (Exception ex) {
                     logInfo( "htmlDoc QuerySelectorAll解析出错=" + ex.Message, s, sb );

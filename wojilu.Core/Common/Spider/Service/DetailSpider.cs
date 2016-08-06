@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Linq;
+//using System.Linq;
 
 using wojilu.Net;
 using wojilu.Web.Utils;
 using wojilu.Common.Spider.Domain;
 
 using HtmlAgilityPack;
-using Fizzler.Systems.HtmlAgilityPack;
+//using Fizzler.Systems.HtmlAgilityPack;
 
 namespace wojilu.Common.Spider.Service {
 
@@ -76,15 +76,16 @@ namespace wojilu.Common.Spider.Service {
 
         //css选择器方式提取详细页内容
         protected string getMatchedBody( HtmlDocument htmlDoc, SpiderTemplate s, StringBuilder sb ) {
-            IEnumerable<HtmlNode> Nodes = htmlDoc.DocumentNode.QuerySelectorAll( s.GetDetailPattern() );
-            if (Nodes.Count() > 0) {
-                String fpage = Nodes.ToArray()[0].OuterHtml;
-                return fpage;
-            }
-            else {
-                logInfo( "error=没有匹配的页面内容:" + _url, this._url, s, sb );
-                return null;
-            }
+            //IEnumerable<HtmlNode> Nodes = htmlDoc.DocumentNode.QuerySelectorAll( s.GetDetailPattern() );
+            //if (Nodes.Count() > 0) {
+            //    String fpage = Nodes.ToArray()[0].OuterHtml;
+            //    return fpage;
+            //}
+            //else {
+            //    logInfo( "error=没有匹配的页面内容:" + _url, this._url, s, sb );
+            //    return null;
+            //}
+            return "";
         }
         protected string getMatchedBody( string page, SpiderTemplate s, StringBuilder sb ) {
             Match match = Regex.Match( page, s.GetDetailPattern(), RegexOptions.Singleline );
