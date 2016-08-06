@@ -35,6 +35,10 @@ using wojilu.Members.Sites.Domain;
 using wojilu.Common.Onlines;
 using wojilu.Config;
 using wojilu.Common.AppBase;
+using System.Text.RegularExpressions;
+using System.Data;
+using System.Net;
+using NReadability;
 
 namespace wojilu.Web.Controller {
 
@@ -64,7 +68,172 @@ namespace wojilu.Web.Controller {
             redirect( new SiteInitController().Index );
         }
 
+        public void AddArticle()
+        {
 
+
+            int userId = ctx.web.UserId();
+            if(userId == -1)
+            {
+                echoJson("{\"success\":true,\"message\":\"请先登录\"}");
+                return;
+            }
+            string strUrl = ctx.Post("url");
+            //string strTitle = ctx.Post("title");
+
+            savePageDetail(strUrl, userId);
+            echoJson("{\"success\":true,\"message\":\"添加成功\"}");
+     
+        }
+        private static void savePageDetail(string strUrl, int nUserID)
+        {
+
+            string content;
+
+            using (var wc = new WebClient())
+            {
+                wc.Encoding = System.Text.Encoding.GetEncoding("UTF-8");
+                content = wc.DownloadString(strUrl);
+            }
+
+
+            var readability = Readability.Create(content);
+          //  Console.WriteLine(readability.Title);
+          //  Console.WriteLine(readability.Content);
+
+            string pageBody = readability.Content;
+            pageBody = Regex.Replace(pageBody, "font-size", "", RegexOptions.IgnoreCase);
+            string strArcitleLink = "<div class=\"ArcitleLink\"><a href=" + strUrl + ">原文链接</a></div>";
+            pageBody = pageBody + strArcitleLink;
+
+            Maticsoft.BLL.BlogCategory bllBlogCategory = new Maticsoft.BLL.BlogCategory();
+            DataSet ds = bllBlogCategory.GetList("AppId = '" + nUserID.ToString() + "'");
+            int nCateID = 1;
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                nCateID = (int)ds.Tables[0].Rows[0]["Id"];
+            }
+
+
+            User user = User.findById(nUserID);
+            Maticsoft.Model.BlogPost data = new Maticsoft.Model.BlogPost();
+
+
+            data.CategoryId = 14;
+            data.Title = readability.Title;
+            data.Abstract = "";
+            data.Content = pageBody;
+            data.AccessStatus = 0;
+            data.CommentCondition = 0;
+            data.SaveStatus = 1;//草稿
+            data.Created = System.DateTime.Now.Date;
+            data.IsTop = 0;
+            data.IsPick = 0;
+            data.IsPic = 0;
+            data.Ip = "";
+            data.OwnerId = nUserID;
+            data.OwnerUrl = user.Url;
+            data.OwnerType = "wojilu.Members.Users.Domain.User";
+            data.CreatorUrl = user.Url;
+            data.AppId = nUserID ;
+            data.CreatorId = nUserID;
+            data.SaveStatus = 0;
+            Maticsoft.BLL.BlogPost bll = new Maticsoft.BLL.BlogPost();
+            bll.Add(data);
+
+           
+
+        }
+        //检查数据库中是否已经存在此数据？
+        //private static bool isPageExist(string pageUrl, StringBuilder sb)
+        //{
+        //    bool isExist = false;
+        //    List<SpiderArticle> list = SpiderArticle.find("Url=:url and IsDelete=0").set("url", pageUrl).list();
+        //    if (list.Count > 0)
+        //    {
+        //        logger.Info("pass..." + pageUrl);
+        //        sb.AppendLine("pass..." + pageUrl);
+        //        isExist = true;
+        //    }
+        //    return isExist;
+        //}
+        //private static void savePageDetail(DetailLink lnk, StringBuilder sb)
+        //{
+
+
+
+        //    SpiderTemplate template = lnk.Template;
+        //    string url = lnk.Url;
+        //    string title = lnk.Title;
+        //    string summary = lnk.Abstract;
+
+        //    if (isPageExist(url, sb)) return;
+
+        //    String pageBody = new PagedDetailSpider().GetContent(url, template, sb);
+
+
+        //    if (pageBody == null) return;
+
+        //    SpiderArticle pd = new SpiderArticle();
+        //    pd.Title = title;
+        //    pd.Url = strUtil.SubString(url, 250);
+        //    pd.Abstract = summary;
+        //    pd.Body = pageBody;
+        //    pd.SpiderTemplate = template;
+
+        //    MatchCollection matchs = Regex.Matches(pageBody, RegPattern.Img, RegexOptions.Singleline);
+        //    if (matchs.Count > 0)
+        //    {
+        //        pd.IsPic = 1;
+        //        pd.PicUrl = matchs[0].Groups[1].Value;
+        //    }
+
+        //    pd.insert();
+
+        //    sb.AppendLine("保存成功..." + lnk.Title + "_" + lnk.Url);
+
+
+        //    pageBody = Regex.Replace(pageBody, "font-size", "", RegexOptions.IgnoreCase);
+        //    string strArcitleLink = "<div class=\"ArcitleLink\"><a href=" + pd.Url + ">原文链接</a></div>";
+        //    pageBody = pageBody + strArcitleLink;
+
+        //    Maticsoft.BLL.BlogCategory bllBlogCategory = new Maticsoft.BLL.BlogCategory();
+        //    DataSet ds = bllBlogCategory.GetList("AppId = '" + template.IsDelete.ToString() + "'");
+        //    int nCateID = 1;
+        //    if (ds.Tables[0].Rows.Count > 0)
+        //    {
+        //        nCateID = (int)ds.Tables[0].Rows[0]["Id"];
+        //    }
+
+
+
+
+
+        //    Maticsoft.Model.BlogPost data = new Maticsoft.Model.BlogPost();
+
+
+        //    data.CategoryId = 1;
+        //    data.Title = title;
+        //    data.Abstract = summary;
+        //    data.Content = pageBody;
+        //    data.AccessStatus = 0;
+        //    data.CommentCondition = 0;
+        //    data.SaveStatus = 1;//草稿
+        //    data.Created = System.DateTime.Now.Date;
+        //    data.IsTop = 0;
+        //    data.IsPick = 0;
+        //    data.IsPic = 0;
+        //    data.Ip = "";
+        //    data.OwnerId = template.IsDelete;
+        //    data.OwnerUrl = template.SiteName;
+        //    data.OwnerType = "wojilu.Members.Users.Domain.User";
+        //    data.CreatorUrl = template.SiteName;
+        //    data.AppId = template.IsDelete; ;
+        //    data.CreatorId = template.IsDelete;
+        //    Maticsoft.BLL.BlogPost bll = new Maticsoft.BLL.BlogPost();
+        //    bll.Add(data);
+
+        //}
         public void Login() {
 
 

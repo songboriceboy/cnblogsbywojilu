@@ -108,6 +108,7 @@ namespace wojilu.Web.Controller {
             bindRegister();
         }
 
+       
         public void Register() {
 
 
